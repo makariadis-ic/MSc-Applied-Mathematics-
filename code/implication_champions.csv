@@ -1,0 +1,14 @@
+signature,structure,S,T,N,lambda,w,is_implication,I1_dec_x,I2_inc_y,I3_00,I4_11,I5_10,NP,IP,OP,EP,CP,LI,continuous,max_grid_jump,classic,fp
+1111111,"S(N(x),y)","min(x+y,1)","max(x+y-1,0)",1-x,1.0,1.0,True,True,True,True,True,True,True,True,True,True,True,True,True,0.005,Lukasiewicz,04b332fd854e11f2328e7a1bc1c9acca
+1101111,"N(T(x,N(y)))","max(x,y)","max(x+y-1,0)",(1-x)/(1+lambda*x),0.5,1.0,True,True,True,True,True,True,True,True,False,True,True,True,True,0.011152,,dee00f99e7c6af3d6df77d1389094f61
+1101110,"N(T(x,N(y)))","max(x,y)","max(x+y-1,0)",(1-x)/(1+lambda*x),2.0,1.0,True,True,True,True,True,True,True,True,False,True,True,True,False,0.043244,,ce074005ef58fe96c8c20ae274a7b0b8
+1101101,"S(T(S(N(x),x),y),T(N(y),N(x)))","min(x+y,1)","min(x,y)",(1-x)/(1+lambda*x),-0.5,1.0,True,True,True,True,True,True,True,True,False,True,True,False,True,0.00995,,c2c2b66bdf30c8b039bc88064b054df4
+1101100,"S(N(x),T(x,y))","min(x+y,1)","min(x,y)",(1-x^w)^(1/w),1.0,3.0,True,True,True,True,True,True,True,True,False,True,True,False,False,0.24621,,b4c4cce0efb578bf2b40cd125d49fdd2
+1100101,"S(T(N(x),N(y)),S(T(N(x),y),T(x,y)))","min(x+y,1)","min(x,y)",1-x,1.0,1.0,True,True,True,True,True,True,True,True,False,False,True,False,True,0.01,,9f194f0948d4465f3787a31574168234
+1100100,"S(T(N(x),N(y)),S(T(N(x),y),T(x,y)))","min(x+y,1)","min(x,y)",(1-x)/(1+lambda*x),-0.5,1.0,True,True,True,True,True,True,True,True,False,False,True,False,False,0.0199,,3ceb5ad6417f8dd361c247c6b3f72c38
+1100000,"S(N(x),T(x,y))","min(x+y,1)",x*y,(1-x^w)^(1/w),1.0,2.0,True,True,True,True,True,True,True,True,False,False,False,False,False,0.099875,,c3d87a51436fc164128f53dfc47c9d20
+1001111,"N(T(x,N(y)))","min(x+y,1)","min(x,y)",1-x,1.0,1.0,True,True,True,True,True,True,True,False,False,True,True,True,True,0.005,,1ddd2a67417d44a1139cd13a67636241
+1001110,"S(N(x),y)","max(x,y)","min(x,y)",(1-x)/(1+lambda*x),5.0,1.0,True,True,True,True,True,True,True,False,False,True,True,True,False,0.029268,,98d215f1f4a025f99c579572db45a9da
+1001101,"S(N(x),y)","min(x+y,1)","max(x+y-1,0)",(1-x)/(1+lambda*x),1.0,1.0,True,True,True,True,True,True,True,False,False,True,True,False,True,0.00995,,86c7f64fe30aee5a7e6936e4405f77e9
+1001100,"S(N(x),y)","min(x+y,1)","max(x+y-1,0)",(1-x)/(1+lambda*x),5.0,1.0,True,True,True,True,True,True,True,False,False,True,True,False,False,0.029268,,bf2e34640c617e6a86c84a07e0d4fa8b
+1000001,"S(N(x),T(x,y))","min(x+y,1)",x*y,(1-x)/(1+lambda*x),-0.5,1.0,True,True,True,True,True,True,True,False,False,False,False,False,True,0.00995,,824673c527d85ad6e2a046b740e01383
