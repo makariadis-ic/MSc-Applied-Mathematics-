@@ -17,7 +17,7 @@ import robot_sim as R
 import fis_controllers as F
 from fim_engine import build_implication
 
-V2 = "/Users/eleftheriosmakariadis/Desktop/MSc Thesis — Fuzzy Sugeno/Claude Code/robot_viewer_v2.html"
+V2 = "../viewer/robot_viewer_v2.html"
 src = io.open(V2, encoding="utf-8").read()
 EPS = json.loads(re.search(
     r'<script type="application/json" id="epdata">(.*?)</script>', src, re.S).group(1))
@@ -27,8 +27,7 @@ RUN = {"cluttered": 1, "corridor": 0, "u_trap": 0, "moving": 1}
 SIGMA, DT, TMAX = 0.05, 0.05, 90.0
 
 # the recordings are hybrid v3 ("hybridB"): champion implication #8 + T_Luk
-CH = pd.read_csv("/Users/eleftheriosmakariadis/Desktop/MSc Thesis — Fuzzy Sugeno/"
-                 "06_Claude_Sync/documents/implication_champions.csv").iloc[8]
+CH = pd.read_csv("implication_champions.csv").iloc[8]
 I8 = build_implication(CH["structure"], CH["S"], CH["T"], CH["N"],
                        lam=CH["lambda"], w=CH["w"])
 T_LUK = lambda a, b: np.maximum(a + b - 1.0, 0.0)

@@ -1,5 +1,5 @@
 import fs from 'fs';
-const HTML="/Users/eleftheriosmakariadis/Desktop/MSc Thesis — Fuzzy Sugeno/Claude Code/robot_viewer_v2.html";
+const HTML="../viewer/robot_viewer_v2.html";
 const src=fs.readFileSync(HTML,'utf8');
 const m=src.match(/const reSimulate = \(\(\) => \{([\s\S]*?)\n\}\)\(\);/);
 if(!m) throw new Error('sim IIFE not found');

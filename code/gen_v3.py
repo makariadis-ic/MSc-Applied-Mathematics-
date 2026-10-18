@@ -15,14 +15,13 @@ import robot_sim as R
 import fis_controllers as F
 from fim_engine import build_implication
 
-V2 = "/Users/eleftheriosmakariadis/Desktop/MSc Thesis — Fuzzy Sugeno/Claude Code/robot_viewer_v2.html"
+V2 = "../viewer/robot_viewer_v2.html"
 src = io.open(V2, encoding="utf-8").read()
 EPS = json.loads(re.search(
     r'<script type="application/json" id="epdata">(.*?)</script>', src, re.S).group(1))
 
 # --- exactly as run_final_validation.py builds 'hybridB' ----------------------
-CHAMPS = pd.read_csv("/Users/eleftheriosmakariadis/Desktop/MSc Thesis — Fuzzy Sugeno/"
-                     "06_Claude_Sync/documents/implication_champions.csv")
+CHAMPS = pd.read_csv("implication_champions.csv")
 R8 = CHAMPS.iloc[8]
 T_LUK = lambda a, b: np.maximum(a + b - 1.0, 0.0)
 CFG = dict(beta=2.803, kappa=5.665, brake_gain=0.153)

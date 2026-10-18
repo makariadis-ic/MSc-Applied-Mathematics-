@@ -3,7 +3,7 @@
    itself rather than a different RNG draw. */
 import fs from 'fs';
 
-const HTML = "/Users/eleftheriosmakariadis/Desktop/MSc Thesis — Fuzzy Sugeno/Claude Code/robot_viewer_v2.html";
+const HTML = "../viewer/robot_viewer_v2.html";
 const src = fs.readFileSync(HTML, 'utf8');
 
 // pull the existing reSimulate IIFE body out of the viewer
