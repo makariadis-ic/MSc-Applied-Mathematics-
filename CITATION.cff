@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the thesis."
+title: "A New Hybrid Sugeno-Type Fuzzy Inference System Enriched with Fuzzy Implications and Application to Autonomous Robot Navigation: companion code"
+authors:
+  - family-names: Makariadis
+    given-names: Stefanos
+type: software
+year: 2026
+repository-code: "https://github.com/makariadis-ic/MSc-Applied-Mathematics-"
